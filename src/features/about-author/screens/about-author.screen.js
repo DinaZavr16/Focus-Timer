@@ -33,13 +33,16 @@ export const AboutAuthorScreen = ({ navigation }) => {
         <Avatar.Image
           size={250}
           source={{
-            uri: "https://ibb.co/cNwyVj1",
+            uri: "https://i.ibb.co/QMkRDzn/Me-2-square.jpg",
           }}
         />
       </AuthorPhotoContainer>
       <AuthorInfoContainer>
-        <AuthorInfo>Developer: Dina Formakidova</AuthorInfo>
+        <AuthorInfo>Developer: Lubomyr Maevskiy</AuthorInfo>
         <AuthorInfo>Company: LimeStone Digital</AuthorInfo>
+        <AuthorInfo>
+          "Problems are not stop signs, they are guidelines"
+        </AuthorInfo>
       </AuthorInfoContainer>
       <Button
         icon="logout"
