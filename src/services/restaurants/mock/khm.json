@@ -1,0 +1,217 @@
+{
+    "html_attributions": [],
+    "next_page_token": "some token",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 49.425248, 
+            "lng": 26.988049
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 49.425248, 
+              "lng": 26.988049
+            },
+            "southwest": {
+              "lat": 50.441453,
+              "lng": 26.988049
+            }
+          }
+        },
+        "ix": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Coffee Boutique",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3672,
+            "html_attributions": [
+              ""
+            ],
+            "photo_reference": "",
+            "width": 6786
+          }
+        ],
+        "place_id": "some place id 41",
+        "plus_code": {
+          "compound_code": "",
+          "global_code": ""
+        },
+        "price_level": 3,
+        "rating": 4.4,
+        "reference": "",
+        "scope": "",
+        "types": [
+          "cafe",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1675,
+        "vicinity": "вулиця Володимирська, 38, Хмельницький, Хмельницька область, 29000"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 49.422616, 
+            "lng": 26.990397
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 49.422616,
+              "lng": 26.990397
+            },
+            "southwest": {
+              "lat": 49.422616,
+              "lng": 26.990397
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Кав'ярня Старий Львів",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2322,
+            "html_attributions": [
+              ""
+            ],
+            "photo_reference": "",
+            "width": 4128
+          }
+        ],
+        "place_id": "some place id 42",
+        "plus_code": {
+          "compound_code": "",
+          "global_code": ""
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "",
+        "scope": "",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 4404,
+        "vicinity": "вулиця Свободи, 47, Хмельницький, Хмельницька область, 29000"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 49.420947, 
+            "lng": 26.992634
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 49.420947, 
+              "lng": 26.992634
+            },
+            "southwest": {
+              "lat": 49.420947, 
+              "lng": 26.992634
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Dioscuri",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 576,
+            "html_attributions": [
+              ""
+            ],
+            "photo_reference": "",
+            "width": 1024
+          }
+        ],
+        "place_id": "some place id 43",
+        "plus_code": {
+          "compound_code": "",
+          "global_code": ""
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "",
+        "scope": "",
+        "types": [
+          "night_club",
+          "cafe",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1284,
+        "vicinity": "вулиця Проскурівська, 71, Хмельницький, Хмельницька область, 29000"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 49.424151, 
+            "lng": 26.985419
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 49.424151, 
+              "lng": 26.985419
+            },
+            "southwest": {
+              "lat": 49.424151, 
+              "lng": 26.985419
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "booдні • coffee&breakfast",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 468,
+            "html_attributions": [
+              ""
+            ],
+            "photo_reference": "",
+            "width": 960
+          }
+        ],
+        "place_id": "some place id 44",
+        "plus_code": {
+          "compound_code": "",
+          "global_code": ""
+        },
+        "price_level": 3,
+        "rating": 4.3,
+        "reference": "",
+        "scope": "",
+        "types": [
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1405,
+        "vicinity": "вулиця Проскурівська, 33, Хмельницький, Хмельницька область, 29000"
+      }
+    ],
+    "status": "OK"
+  }

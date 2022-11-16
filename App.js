@@ -1,50 +1,54 @@
-import React, { useState } from "react";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import React from "react";
+import { ThemeProvider } from "styled-components/native";
+import * as firebase from "firebase";
+
 import {
-  Text,
-  View,
-  StyleSheet,
-  SafeAreaView,
-  Platform,
-  StatusBar,
-} from "react-native";
-import Constants from "expo-constants";
-import { colors } from "./src/utils/colors";
-import { Focus } from "./src/features/Focus";
-import { Timer } from "./src/features/Timer";
-import { FocusHistory } from "./src/features/FocusHistory";
-import { AboutAuthorScreen } from "./src/features/AboutMe";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+  useFonts as useOswald,
+  Oswald_400Regular,
+} from "@expo-google-fonts/oswald";
+import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
-export default function App() {
-  const [currentTask, setCurrentTask] = useState();
-  const [history, setHistory] = useState([]);
+import { theme } from "./src/infrastructure/theme";
+import { Navigation } from "./src/infrastructure/navigation";
 
-  return (
-    <SafeAreaView style={styles.container}>
-      {!currentTask ? (
-        <>
-          <Focus addTask={setCurrentTask} />
-          <FocusHistory history={history} />
-        </>
-      ) : (
-        <Timer
-          focusTask={currentTask}
-          onTimerEnd={(task) => {
-            setHistory([...history, task]);
-          }}
-          clearTask={() => {
-            setCurrentTask(null);
-          }}
-        />
-      )}
-    </SafeAreaView>
-  );
+import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDVSxSkQSafugu6Uct1hZAYZhxqPOfNSlY",
+  authDomain: "food-n-go.firebaseapp.com",
+  projectId: "food-n-go",
+  storageBucket: "food-n-go.appspot.com",
+  messagingSenderId: "205963009348",
+  appId: "1:205963009348:web:f65d999369b853a9abcb11",
+  measurementId: "G-QEW2ZCMLZ1",
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    backgroundColor: colors.darkBlue,
-  },
-});
+export default function App() {
+  const [oswaldLoaded] = useOswald({
+    Oswald_400Regular,
+  });
+
+  const [latoLoaded] = useLato({
+    Lato_400Regular,
+  });
+
+  if (!oswaldLoaded || !latoLoaded) {
+    return null;
+  }
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <AuthenticationContextProvider>
+          <Navigation />
+        </AuthenticationContextProvider>
+      </ThemeProvider>
+      <ExpoStatusBar style="dark" />
+    </>
+  );
+}
